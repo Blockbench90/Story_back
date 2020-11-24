@@ -19,12 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9094de56-864c-4a59-a0b0-719284eadaf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9094de56-864c-4a59-a0b0-719284eadaf5" name="Default Changelist" comment="ref">
+      <change afterPath="$PROJECT_DIR$/controllers/StoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/StoryModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/isValidObect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dolly/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dolly/client/src/components/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/components/SideMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dolly/client/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dolly/client/src/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/theme.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dolly/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,7 @@
       <updated>1606095836680</updated>
       <workItem from="1606095837791" duration="7139000" />
       <workItem from="1606150931811" duration="2844000" />
+      <workItem from="1606214593472" duration="4505000" />
     </task>
     <servers />
   </component>
@@ -74,6 +80,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ref" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1897" height="196" key="GridCell.Tab.0.bottom" timestamp="1606102990782">
