@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9094de56-864c-4a59-a0b0-719284eadaf5" name="Default Changelist" comment="ref">
-      <change afterPath="$PROJECT_DIR$/validations/createStory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validations/register.js" afterDir="false" />
+    <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/StoriesController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/UserController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/mailer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/passport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/StoryModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/UserModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/generateHash.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/isValidObjectId.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/sendEmail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validations/createStory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validations/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dolly/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dolly/client/src/components/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/components/SideMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dolly/client/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dolly/client/src/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/src/theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dolly/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../dolly/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/StoryController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/UserController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/mailer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/passport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/StoryModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/UserModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/generateHash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/isValidObect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sendEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validations/createStory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validations/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kfdyDjWq2VeYFnLSq9MQky6szz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1kmSuJCdaWc66p1rI9N54QbplVU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,68 +51,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\APPS\Story_back\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9094de56-864c-4a59-a0b0-719284eadaf5" name="Default Changelist" comment="" />
-      <created>1606095836680</created>
+      <changelist id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="" />
+      <created>1606304500215</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606095836680</updated>
-      <workItem from="1606095837791" duration="7139000" />
-      <workItem from="1606150931811" duration="2844000" />
-      <workItem from="1606214593472" duration="4505000" />
-      <workItem from="1606221044039" duration="3444000" />
+      <updated>1606304500215</updated>
+      <workItem from="1606304502349" duration="1443000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ref" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1897" height="196" key="GridCell.Tab.0.bottom" timestamp="1606102990782">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state width="1897" height="196" key="GridCell.Tab.0.bottom/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606102990782" />
-    <state width="1897" height="196" key="GridCell.Tab.0.center" timestamp="1606102990782">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state width="1897" height="196" key="GridCell.Tab.0.center/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606102990782" />
-    <state width="1897" height="196" key="GridCell.Tab.0.left" timestamp="1606102990782">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state width="1897" height="196" key="GridCell.Tab.0.left/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606102990782" />
-    <state width="1897" height="196" key="GridCell.Tab.0.right" timestamp="1606102990782">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state width="1897" height="196" key="GridCell.Tab.0.right/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606102990782" />
-    <state x="416" y="108" key="RollbackChangesDialog" timestamp="1606221567910">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state x="416" y="108" key="RollbackChangesDialog/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606221567910" />
-    <state x="776" y="231" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606102118014">
-      <screen x="0" y="46" width="1920" height="1034" />
-    </state>
-    <state x="776" y="231" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606102118014" />
   </component>
 </project>
