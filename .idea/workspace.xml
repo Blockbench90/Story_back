@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="types">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/UserController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/db.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mailer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/mailer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/sendEmail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sendEmail.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validations/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/validations/register.ts" afterDir="false" />
-    </list>
+    <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="подключил базу, протестил на постмане, все бенч, погнал дальше" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +50,7 @@
       <workItem from="1606304502349" duration="1820000" />
       <workItem from="1606306830246" duration="16000" />
       <workItem from="1606381880449" duration="8646000" />
-      <workItem from="1606402604989" duration="2183000" />
+      <workItem from="1606402604989" duration="2242000" />
     </task>
     <task id="LOCAL-00001" summary="types">
       <created>1606306068382</created>
@@ -67,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606306068382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="подключил базу, протестил на постмане, все бенч, погнал дальше">
+      <created>1606405142528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606405142528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,16 +86,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="types" />
-    <option name="LAST_COMMIT_MESSAGE" value="types" />
+    <MESSAGE value="подключил базу, протестил на постмане, все бенч, погнал дальше" />
+    <option name="LAST_COMMIT_MESSAGE" value="подключил базу, протестил на постмане, все бенч, погнал дальше" />
   </component>
   <component name="WindowStateProjectService">
     <state x="733" y="362" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606387487174">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="733" y="362" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606387487174" />
-    <state x="551" y="280" key="Vcs.Push.Dialog.v2" timestamp="1606306070678">
-      <screen x="0" y="46" width="1920" height="1034" />
+    <state x="2471" y="275" key="Vcs.Push.Dialog.v2" timestamp="1606405144500">
+      <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="551" y="280" key="Vcs.Push.Dialog.v2/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606306070678" />
+    <state x="2471" y="275" key="Vcs.Push.Dialog.v2/0.46.1920.1034/1920.40.1920.1040@1920.40.1920.1040" timestamp="1606405144500" />
   </component>
 </project>
