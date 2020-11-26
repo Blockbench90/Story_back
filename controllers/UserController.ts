@@ -74,10 +74,8 @@ class UserController {
         {
           emailFrom: 'admin@story.com',
           emailTo: data.email,
-          subject: 'Подтверждение почты Twitter Clone Tutorial',
-          html: `Для того, чтобы подтвердить почту, перейдите <a href="http://localhost:${
-            process.env.PORT || 8888
-          }/auth/verify?hash=${data.confirmHash}">по этой ссылке</a>`,
+          subject: 'Подтверждение почты социальной сети Story',
+          html: `Для того, чтобы подтвердить почту, перейдите <a href="http://localhost:${ process.env.PORT || 8888 }/auth/verify?hash=${data.confirmHash}">по этой ссылке</a>`,
         },
         (err: Error | null) => {
           if (err) {

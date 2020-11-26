@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+//запускаем получение ключевых конфигураций
 dotenv.config();
 
 import './core/db';
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(passport.initialize());
 
 app.get('/users', UserCtrl.index);
+app.post('/users', registerValidations, UserCtrl.create)
 app.get('/users/me', passport.authenticate('jwt', { session: false }), UserCtrl.getUserInfo);
 app.get('/users/:id', UserCtrl.show);
 

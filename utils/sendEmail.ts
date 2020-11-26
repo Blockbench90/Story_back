@@ -7,7 +7,7 @@ interface SendEmailProps {
   subject: string;
   html: string;
 }
-
+//форма отправки письма для подтверждения регистрации
 export const sendEmail = (
   { emailFrom, emailTo, subject, html }: SendEmailProps,
   callback?: (err: Error | null, info: SentMessageInfo) => void,
