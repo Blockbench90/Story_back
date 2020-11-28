@@ -64,6 +64,8 @@ class UserController {
         email: req.body.email,
         username: req.body.username,
         fullname: req.body.fullname,
+        //хеш пароля можно найти в слитых базах, поэтому добавляем сгенерированный ключ в конец
+        //и амба, не огонь, но маленькая хитрость
         password: generateMD5(req.body.password + process.env.SECRET_KEY),
         confirmHash: generateMD5(process.env.SECRET_KEY || Math.random().toString()),
       };
@@ -129,18 +131,23 @@ class UserController {
     }
   }
 
+  //после логинизации передаем все на фронт
   async afterLogin(req: express.Request, res: express.Response): Promise<void> {
     try {
+      //небольшая проверка, с возвращаемым обьектом в json формате с тимами из UserModelDocumentInterface
       const user = req.user ? (req.user as UserModelDocumentInterface).toJSON() : undefined;
       res.json({
         status: 'success',
         data: {
+          //распарсим юзера
           ...user,
+          //создадим токен с валидностью в 30 дней
           token: jwt.sign({ data: req.user }, process.env.SECRET_KEY || '123', {
             expiresIn: '30 days',
           }),
         },
       });
+      //а в случае ошибки, вернем статут 500, как ошибка авторизации, и саму ошубку
     } catch (error) {
       res.status(500).json({
         status: 'error',
