@@ -6,6 +6,7 @@ import { isValidObjectId } from '../utils/isValidObjectId';
 import { UserModelInterface } from '../models/UserModel';
 
 class StoriesController {
+  //достать все сторисы
   async index(_: any, res: express.Response): Promise<void> {
     try {
       const stories = await StoryModel.find({}).populate('user').sort({ 'createdAt': '-1' }).exec();
@@ -23,6 +24,7 @@ class StoriesController {
   }
 
   async show(req: any, res: express.Response): Promise<void> {
+  //достать конкретную сторис
     try {
       const storyId = req.params.id;
 
@@ -51,6 +53,7 @@ class StoriesController {
   }
 
   async create(req: express.Request, res: express.Response): Promise<void> {
+   //создать сторис
     try {
       const user = req.user as UserModelInterface;
 
@@ -62,7 +65,6 @@ class StoriesController {
           return;
         }
 
-        // TODO: Поправить типизацию
         const data: any = {
           text: req.body.text,
           user: user._id,
@@ -84,6 +86,7 @@ class StoriesController {
   }
 
   async delete(req: express.Request, res: express.Response): Promise<void> {
+    //операция патовая, поэтому сначала проверка, является ли пользователь владельцем истории
     const user = req.user as UserModelInterface;
 
     try {

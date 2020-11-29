@@ -28,18 +28,20 @@ passport.use(
 
 passport.use(
   new JWTstrategy(
+      //предаю ключ для шифрования и в хедерах токен
     {
       secretOrKey: process.env.SECRET_KEY || '123',
       jwtFromRequest: ExtractJwt.fromHeader('token'),
     },
     async (payload: { data: UserModelInterface }, done): Promise<void> => {
       try {
+          //если ключ подошел, и токен расшифрован, ищу пользователя по id
         const user = await UserModel.findById(payload.data._id).exec();
-
+        //если все прошло успешно, и пользователь найден, возвращаю
         if (user) {
           return done(null, user);
         }
-
+        //а иначе ничего
         done(null, false);
       } catch (error) {
         done(error, false);

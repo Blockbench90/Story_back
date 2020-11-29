@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="подключил базу, протестил на постмане, все бенч, погнал дальше" />
+    <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="подключил базу, протестил на постмане, все бенч, погнал дальше">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/StoriesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/StoriesController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/passport.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/passport.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/StoryModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/StoryModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validations/createStory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/validations/createStory.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="C:\React\Story_back\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -52,6 +60,8 @@
       <workItem from="1606381880449" duration="8646000" />
       <workItem from="1606402604989" duration="2242000" />
       <workItem from="1606592016353" duration="176000" />
+      <workItem from="1606654817014" duration="731000" />
+      <workItem from="1606660518547" duration="8274000" />
     </task>
     <task id="LOCAL-00001" summary="types">
       <created>1606306068382</created>
@@ -100,5 +110,17 @@
     </state>
     <state x="551" y="280" key="Vcs.Push.Dialog.v2/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1606306070678" />
     <state x="2471" y="275" key="Vcs.Push.Dialog.v2/0.46.1920.1034/1920.40.1920.1040@1920.40.1920.1040" timestamp="1606405144500" />
+    <state x="1260" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606654835969">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="1260" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1034@0.0.1920.1034" timestamp="1606654835969" />
+    <state x="1163" y="100" width="585" height="849" key="find.popup" timestamp="1606666395906">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="1163" y="100" width="585" height="849" key="find.popup/0.0.1920.1034@0.0.1920.1034" timestamp="1606666395906" />
+    <state x="1119" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1606669150090">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="1119" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1034@0.0.1920.1034" timestamp="1606669150090" />
   </component>
 </project>
