@@ -8,6 +8,5 @@ const options = {
     pass: process.env.NODEMAILER_PASS,
   },
 };
-console.log(options)
 
 export const mailer = nodemailer.createTransport(options);

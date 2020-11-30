@@ -13,7 +13,8 @@ passport.use(
         if (!user) {
           return done(null, false);
         }
-
+        //user.confirmed && не забыть вставить в сравнение, когда на строю фронт, чтобы прилетало
+          //true, мол верифицирован, и дать добро на вход
         if (user.confirmed && user.password === generateMD5(password + process.env.SECRET_KEY)) {
           done(null, user);
         } else {

@@ -71,7 +71,7 @@ class StoriesController {
         };
 
         const story = await StoryModel.create(data);
-
+        console.log(story)
         res.json({
           status: 'success',
           data: await story.populate('user').execPopulate(),
