@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3171d769-7619-4000-947b-8eaeebabfdcb" name="Default Changelist" comment="подключил базу, протестил на постмане, все бенч, погнал дальше">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/StoriesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/StoriesController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/passport.ts" beforeDir="false" afterPath="$PROJECT_DIR$/core/passport.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,7 @@
       <workItem from="1606592016353" duration="176000" />
       <workItem from="1606654817014" duration="731000" />
       <workItem from="1606660518547" duration="8274000" />
+      <workItem from="1606746828632" duration="2233000" />
     </task>
     <task id="LOCAL-00001" summary="types">
       <created>1606306068382</created>
