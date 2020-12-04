@@ -15,22 +15,33 @@ const app = express();
 
 app.use(express.json());
 app.use(passport.initialize());
-
-app.get('/users', UserCtrl.index); //взять всех юзеров
-app.post('/users', registerValidations, UserCtrl.create) //создать юзера
+ //взять всех юзеров
+app.get('/users', UserCtrl.index);
+ //создать юзера
+app.post('/users', registerValidations, UserCtrl.create)
+//верифицировать пользователя
 app.get('/users/me', passport.authenticate('jwt', { session: false }), UserCtrl.getUserInfo);
-app.get('/users/:id', UserCtrl.show); //найти конкретного юзера
+//найти конкретного юзера
+app.get('/users/:id', UserCtrl.show); 
 
-app.get('/stories', StoriesCtrl.index); //взять все истории
-app.get('/stories/:id', StoriesCtrl.show); //найти конкретную историю
+ //взять все истории
+app.get('/stories', StoriesCtrl.index);
+ //найти конкретную историю
+app.get('/stories/:id', StoriesCtrl.show);
 //пропускаю stories через мидлваре passport.authenticate('jwt'), создавая доп.интерфейс, чтобы взять ее из поля запроса(req)
-app.delete('/stories/:id', passport.authenticate('jwt'), StoriesCtrl.delete); //удалить историю
-app.patch('/stories/:id', passport.authenticate('jwt'), createStoryValidations, StoriesCtrl.update); //обновить историю
-app.post('/stories', passport.authenticate('jwt'), createStoryValidations, StoriesCtrl.create); //создать в базе историю
+ //удалить историю
+app.delete('/stories/:id', passport.authenticate('jwt'), StoriesCtrl.delete);
+ //обновить историю
+app.patch('/stories/:id', passport.authenticate('jwt'), createStoryValidations, StoriesCtrl.update);
+//создать в базе историю
+app.post('/stories', passport.authenticate('jwt'), createStoryValidations, StoriesCtrl.create); 
 
-app.get('/auth/verify', registerValidations, UserCtrl.verify); //верефецировать пользователя
-app.post('/auth/register', registerValidations, UserCtrl.create);  //зарегистрировать пользователя
-app.post('/auth/login', passport.authenticate('local'), UserCtrl.afterLogin);  //залогиниться
+//зарегистрировать пользователя
+app.post('/auth/register', registerValidations, UserCtrl.create);  
+//верефецировать пользователя
+app.get('/auth/verify', registerValidations, UserCtrl.verify); 
+//залогиниться
+app.post('/auth/login', passport.authenticate('local'), UserCtrl.afterLogin);  
 
 
 //слушьть порт 8888, ну или тот, который указан в конфигурации
