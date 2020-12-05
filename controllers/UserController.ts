@@ -134,7 +134,7 @@ class UserController {
   //после логинизации передаем все на фронт
   async afterLogin(req: express.Request, res: express.Response): Promise<void> {
     try {
-      //небольшая проверка, с возвращаемым обьектом в json формате с тимами из UserModelDocumentInterface
+      //небольшая проверка, с возвращаемым обьектом в json формате с типами из UserModelDocumentInterface
       const user = req.user ? (req.user as UserModelDocumentInterface).toJSON() : undefined;
       res.json({
         status: 'success',
@@ -159,6 +159,7 @@ class UserController {
   async getUserInfo(req: express.Request, res: express.Response): Promise<void> {
     try {
       const user = req.user ? (req.user as UserModelDocumentInterface).toJSON() : undefined;
+      console.log(user, 'user in AuthMe')
       res.json({
         status: 'success',
         data: user,
