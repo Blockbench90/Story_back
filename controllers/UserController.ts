@@ -54,12 +54,13 @@ class UserController {
 
   async create(req: express.Request, res: express.Response): Promise<void> {
     try {
+      //проверка валидации, при наличии ошибки, сообщить на фронт
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         res.status(400).json({ status: 'error', errors: errors.array() });
         return;
       }
-
+      //если все гуд, создать пользователя, исходя из интерфейса
       const data: UserModelInterface = {
         email: req.body.email,
         username: req.body.username,
@@ -67,7 +68,8 @@ class UserController {
         //хеш пароля можно найти в слитых базах, поэтому добавляем сгенерированный ключ в конец
         //и амба, не огонь, но маленькая хитрость
         password: generateMD5(req.body.password + process.env.SECRET_KEY),
-        confirmHash: generateMD5(process.env.SECRET_KEY || Math.random().toString()),
+        //генерируется одинаковый хеш, поскольку переменная env.SECRET_KEY всегда одинакова
+        confirmHash: generateMD5(process.env.SECRET_KEY + Math.random().toString()),
       };
 
       const user = await UserModel.create(data);

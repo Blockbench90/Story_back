@@ -48,7 +48,8 @@ const UserSchema = new Schema<UserModelInterface>({
 }, {
   timestamps: true
 });
-
+//после регистрации или логинизации, удалить поля, которые пользователю
+//совсем не надо, а вот злоумышленнику, прям мышка в ладошку
 UserSchema.set('toJSON', {
   transform: function (_, obj) {
     delete obj.password;
