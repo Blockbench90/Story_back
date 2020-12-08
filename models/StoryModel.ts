@@ -13,7 +13,7 @@ const StorySchema = new Schema<StoryModelInterface>({
   text: {
     required: true,
     type: String,
-    maxlength: 280,
+    maxlength: 3000,
   },
   user: {
     required: true,

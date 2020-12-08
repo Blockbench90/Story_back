@@ -161,7 +161,7 @@ class UserController {
   async getUserInfo(req: express.Request, res: express.Response): Promise<void> {
     try {
       const user = req.user ? (req.user as UserModelDocumentInterface).toJSON() : undefined;
-      console.log(user, 'user in AuthMe')
+    
       res.json({
         status: 'success',
         data: user,

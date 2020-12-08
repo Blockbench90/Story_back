@@ -5,7 +5,7 @@ export const createStoryValidations = [
   body('text', 'Введите текст твита')
     .isString()
     .isLength({
-      max: 1000,
+      max: 3000,
     })
     .withMessage('Максимальная длина истории 1000 символов'),
 ];
