@@ -85,7 +85,7 @@ class StoriesController {
     }
   }
 
-  async delete(req: express.Request, res: express.Response): Promise<void> {
+  async   delete(req: express.Request, res: express.Response): Promise<void> {
     //операция патовая, поэтому сначала проверка, является ли пользователь владельцем истории
     const user = req.user as UserModelInterface;
 
