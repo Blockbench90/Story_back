@@ -3,6 +3,7 @@ import { UserModelDocumentInterface } from './UserModel';
 
 export interface StoryModelInterface {
   _id?: string;
+  title?: string;
   text: string;
   user: UserModelDocumentInterface;
 }
@@ -10,6 +11,11 @@ export interface StoryModelInterface {
 export type StoryModelDocumentInterface = StoryModelInterface & Document;
 
 const StorySchema = new Schema<StoryModelInterface>({
+  title: {
+    required: true,
+    type: String,
+    maxlength: 1000
+  },
   text: {
     required: true,
     type: String,

@@ -8,6 +8,7 @@ import { sendEmail } from '../utils/sendEmail';
 import { isValidObjectId } from '../utils/isValidObjectId';
 
 class UserController {
+  //получить всех пользователей
   async index(_: any, res: express.Response): Promise<void> {
     try {
       const users = await UserModel.find({}).exec();
@@ -23,7 +24,7 @@ class UserController {
       });
     }
   }
-
+  //найти пользователя по ID
   async show(req: any, res: express.Response): Promise<void> {
     try {
       const userId = req.params.id;
@@ -51,7 +52,7 @@ class UserController {
       });
     }
   }
-
+  //создать пользователя
   async create(req: express.Request, res: express.Response): Promise<void> {
     try {
       //проверка валидации, при наличии ошибки, сообщить на фронт
